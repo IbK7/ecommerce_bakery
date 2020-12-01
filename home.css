@@ -1,0 +1,179 @@
+#heading-book h3 {
+  text-align: center;
+  text-shadow: 2px 2px 6px #000000;
+  font-size: 30px;
+  font-weight: 500;
+  color: #314152;
+  margin-top: 100px;
+}
+#heading-book p {
+  text-align: center;
+}
+
+/* cart image */
+.right img {
+  width: 45px;
+  height: 30px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.footer-distributed {
+  margin-top: 200px;
+}
+.container {
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.container .box {
+  position: relative;
+  width: 350px;
+  padding: 30px;
+  background: #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  margin: 10px;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-align: center;
+}
+.container .box .icon {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  color: #fff;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  border-radius: 50%;
+  font-size: 40px;
+  font-weight: 700;
+  transition: 0.5s;
+}
+.container .box:nth-child(1) .icon {
+  box-shadow: 0 0 0 0 #2b7a78;
+  background: #2b7a78;
+}
+.container .box:nth-child(1):hover .icon {
+  box-shadow: 0 0 0 400px #2b7a78;
+}
+.container .box:nth-child(2) .icon {
+  box-shadow: 0 0 0 0 #464866;
+  background: #464866;
+}
+.container .box:nth-child(2):hover .icon {
+  box-shadow: 0 0 0 400px #464866;
+}
+.container .box:nth-child(3) .icon {
+  box-shadow: 0 0 0 0 #29648a;
+  background: #29648a;
+}
+.container .box:nth-child(3):hover .icon {
+  box-shadow: 0 0 0 400px #29648a;
+}
+.container .box:nth-child(4) .icon {
+  box-shadow: 0 0 0 0 #374785;
+  background: #374785;
+}
+.container .box:nth-child(4):hover .icon {
+  box-shadow: 0 0 0 400px #374785;
+}
+.container .box:nth-child(5) .icon {
+  box-shadow: 0 0 0 0 #24305e;
+  background: #24305e;
+}
+.container .box:nth-child(5):hover .icon {
+  box-shadow: 0 0 0 400px #24305e;
+}
+.container .box .content {
+  position: relative;
+  z-index: 1;
+  transition: 0.3s;
+}
+.container .box:hover .content {
+  color: #ffffff;
+}
+.container .box .content h3 {
+  font-size: 20px;
+  margin: 10px 0;
+  padding: 0;
+}
+.container .box .content p {
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+}
+.container .box .content .addcart {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #f1f1f1;
+  border-radius: 4px;
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+  margin-top: 20px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+  user-select: none;
+}
+
+.container .box:before {
+  content: "";
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: rgba(255, 255, 255, 0.2);
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 60px; /* Stay at the top */
+  right: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  padding-left: 20px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  text-align: center;
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0px;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}

@@ -1,0 +1,30 @@
+body{
+	background-color:rgb(244,226,196);
+}
+.carouselDiv{
+	width:60%;
+	height: 505px;
+	border:solid;
+	border-color:grey;
+	position: relative;
+	left:20%;
+}
+.logo{
+	height: 100px;
+	width: 100px;
+}
+.slideshow-image{
+	height: 500px;
+	width:100%;
+}
+.menu{
+	color:black;
+}
+
+.menu:hover{
+	background-color:blue;
+	color:white;
+}
+.menu:active{
+	background-color: blue;
+}
